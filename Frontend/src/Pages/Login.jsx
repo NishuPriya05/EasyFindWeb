@@ -13,7 +13,7 @@ export default function LoginPage() {
 
     try {
       const response = await fetch(
-        "http://51.20.114.203:9099/api/users/login",
+        "/api/users/login",
         {
           method: "POST",
           headers: {
