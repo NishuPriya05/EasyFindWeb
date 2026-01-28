@@ -23,7 +23,7 @@ export default function LoginPage() {
             mobileNo,
             password,
           }),
-        }
+        },
       );
 
       const data = await response.json();
@@ -43,6 +43,17 @@ export default function LoginPage() {
       alert("Something went wrong. Please try again.");
       console.error(error);
     }
+  };
+
+  const handleTestLogin = () => {
+    // Create fake user data for testing
+    const testUser = {
+      name: "Test User",
+      mobileNo: mobileNo || "5555555555",
+      address: "Test Address",
+    };
+    localStorage.setItem("user", JSON.stringify(testUser));
+    navigate("/home");
   };
 
   return (
@@ -79,6 +90,13 @@ export default function LoginPage() {
           disabled={loading}
         >
           {loading ? "Logging in..." : "Login"}
+        </button>
+        <button
+          type="button"
+          onClick={handleTestLogin}
+          className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 transition-colors mt-2"
+        >
+          Test Login (Skip API)
         </button>
       </form>
     </div>

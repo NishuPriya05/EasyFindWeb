@@ -168,7 +168,7 @@ const RoomsPage = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {lodgeData.rooms.map((room) => (
               <div key={room.roomId} className="bg-white rounded-xl shadow-lg">
-                <div className="bg-blue-600 p-6 text-white">
+                <div className="bg-blue-600 p-6 text-white rounded-t-xl">
                   <h3 className="text-2xl font-bold">{room.name}</h3>
                   <p className="text-blue-100">{room.type}</p>
                 </div>

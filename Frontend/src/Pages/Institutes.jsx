@@ -51,7 +51,7 @@ const Institutes = () => {
 
   return (
     <div className="min-h-screen bg-linear-to-br from-slate-50 via-blue-50 to-purple-50">
-      <div className="bg-white shadow-sm sticky top-0 z-50">
+      <div className="bg-white shadow-sm sticky top-0 z-50 py-0">
         <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
           <button className="p-2 hover:bg-gray-100 rounded-full transition-colors"></button>
           <button
