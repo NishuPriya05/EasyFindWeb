@@ -96,7 +96,7 @@ export default function LoginPage() {
           onClick={handleTestLogin}
           className="w-full bg-green-500 text-white py-2 rounded hover:bg-green-600 transition-colors mt-2"
         >
-          Test Login (Skip API)
+          Test Login 
         </button>
       </form>
     </div>

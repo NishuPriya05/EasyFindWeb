@@ -12,6 +12,7 @@ import AddRoomForm from "./Pages/AddRoomForm";
 import Institutes from "./Pages/Institutes";
 import UploadTest from "./Pages/UploadTest";
 import Layout from "./Components/Layout";
+import About from "./Pages/About";  
 
 export default function App() {
   return (
@@ -64,6 +65,14 @@ export default function App() {
           element={
             <Layout>
               <UploadTest />
+            </Layout>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <Layout>
+              <About />
             </Layout>
           }
         />
